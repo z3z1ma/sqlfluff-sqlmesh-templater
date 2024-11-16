@@ -51,7 +51,7 @@ keywords = [
   "tsql",
   "sqlmesh",
 ]
-dependencies = ["sqlfluff==3.2.5"]
+dependencies = ["sqlfluff==3.2.5", "sqlglot[rs]"]
 
 [build-system]
 requires = ["hatchling"]
