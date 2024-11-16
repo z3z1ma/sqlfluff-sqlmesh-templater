@@ -34,8 +34,10 @@ To use the templater with SQLFluff, configure SQLFluff to use this custom templa
 Create or update your .sqlfluff configuration file with the following content:
 
 ```toml
-[tool.sqlfluff.core]
-templater = "sqlmesh"
+[tool.sqlfluff]
+core.templater = "sqlmesh"
+core.dialect = "postgres"
+templater.sqlmesh.sqlglot_dialect = "postgres"
 ```
 
 Note:
